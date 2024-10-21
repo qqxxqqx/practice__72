@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Примеры селекторов</title>
+    <link rel="stylesheet" href="style/style.css"> <!-- Подключение CSS файла -->
+</head>
+<body>
+
+<!-- Пример 1: абзацы внутри div -->
+<div>
+    <p>+++</p>
+    <p>+++</p>
+</div>
+<div>
+    <p>+++</p>
+</div>
+
+<p>---</p>
+<p>---</p>
+
+<!-- Пример 2: заголовки h2 внутри div -->
+<div>
+    <h2>+++</h2>
+    <p>---</p>
+    <p>---</p>
+</div>
+<div>
+    <h2>+++</h2>
+    <p>---</p>
+</div>
+
+<h2>---</h2>
+<p>---</p>
+
+<!-- Пример 3: абзацы из элемента с id block -->
+<div id="block">
+    <h2>---</h2>
+    <p>+++</p>
+    <p>+++</p>
+</div>
+<div>
+    <h2>---</h2>
+    <p>---</p>
+</div>
+
+<h2>---</h2>
+<p>---</p>
+
+<!-- Пример 4: заголовки h2 из элемента с id block -->
+<div id="block">
+    <h2>+++</h2>
+    <p>---</p>
+    <p>---</p>
+    
+    <h2>+++</h2>
+    <p>---</p>
+</div>
+<div>
+    <h2>---</h2>
+    <p>---</p>
+</div>
+
+<h2>---</h2>
+<p>---</p>
+
+<!-- Пример 5: элементы с классом bbb -->
+<div id="block">
+    <h2 class="bbb">+++</h2>
+    <p class="bbb">+++</p>
+    <p>---</p>
+
+    <h2 class="bbb">+++</h2>
+    <p>---</p>
+</div>
+<div class="bbb">+++</div>
+
+<h2>---</h2>
+<p class="bbb">+++</p>
+
+<!-- Пример 6: элементы с классом bbb из элемента с id block -->
+<div id="block">
+    <h2 class="bbb">+++</h2>
+    <p class="bbb">+++</p>
+    <p>---</p>
+
+    <h2 class="bbb">+++</h2>
+    <p>---</p>
+</div>
+<div class="bbb">---</div>
+
+<h2>---</h2>
+<p class="bbb">---</p>
+
+<!-- Пример 7: абзацы p с классом bbb -->
+<div id="block">
+    <h2 class="bbb">---</h2>
+    <p class="bbb">+++</p>
+    <p>---</p>
+
+    <h2 class="bbb">---</h2>
+    <p class="bbb">+++</p>
+</div>
+
+<div class="bbb">---</div>
+
+<h2>---</h2>
+<p class="bbb">+++</p>
+
+<!-- Пример 8: заголовки h2 с классом bbb -->
+<div id="block">
+    <h2 class="bbb">+++</h2>
+    <p class="bbb">-----</p>
+
+    <h2 class="bbb">+++</h2>
+    <p class="bbb">-----</p>
+</div>
+
+<h2>-----</h2>
+
+<h2 class="bbb">+++</h2>
+
+<p class="bbb">-----</p>
+
+
+<!-- Пример 9: абзацы p с классом bbb из элемента с id block -->
+<div id="block">
+	<h2 class="bbb">---</h2>
+	<p class="bbb">
+		+++
+	</p>
+	<p>
+		---
+	</p>
+
+	<h2 class="bbb">---</h2>
+	<p class="bbb">
+		+++
+	</p>
+</div>
+
+<div class="bbb">
+	---
+</div>
+
+<h2>---</h2>
+
+<p class="bbb">
+	+++
+</p>
+
+
+<!-- Пример 10: элементы с классом bbb и xxx -->
+<h2 class="bbb">+++</h2><
+<p class="bbb">+++</p><
+
+<h2 class="xxx">+++</h2><
+<p>--- </ p >
+
+<h3 > --- </ h3 >
+<p class = "xxx" > +++ </ p >
+
+<div class = "bbb" > +++ </ div >
+
+<!-- Пример 11: абзацы p с классом bbb и заголовки h1 с классом xxx -->
+<h3 > --- </ h3 >
+<p > --- </ p >
+
+<h3 > --- </ h3 >
+<p > --- </ p >
+
+<!-- Пример 12: абзацы p с классом bbb и xxx из элемента с id block -->
+<div id = "block" >
+	<h3 > --- </ h3 >
+	<p > +++ </ p >
+
+	<h3 > --- </ h3 >
+	<p > --- </ p >
+
+	<h3 > --- </ h3 >
+	<p > +++ </ p >
+
+	<div class = "bbb" >
+		--- 
+	 </ div >
+	 	
+
+<!-- Пример 13: элементы с классом fff -->
+<div class = "fff" >
+	+++
+ </ div >
+
+<h3 > +++ </ h3 >
+<p > +++ </ p >
+
+<h3 > --- </ h3 >
+<p > --- </ p >
+
+<!-- Пример 14: абзацы p из элемента с классом fff -->
+<div class = "fff" >
+	<h3 > --- </ h3 >
+	<p > +++ </ p >
+	<p > +++ </ p >
+ </ div >
+
+<h3 > --- </ h3 >
+<p > --- </ p >
+
+<!-- Пример 15: абзацы p с классом fff -->
+<div id = "block" >
+	<h3 > --- </ h3 >
+	<p > --- </ p >
+	<p > --- </ p >
+
+
+        
+      <!-- Пример 16: элементы с классом bbb из элемента с классом fff -->
+   <div class="fff">
+    <h2 class="bbb">Заголовок с классом bbb внутри fff.</h2>
+    <p>Текст без класса.</p>
+    <p class="bbb">Абзац с классом bbb внутри fff.</p>
+</div>
+
+
+
+<!-- Пример 17: заголовки h1 с классом bbb из элемента с классом fff -->
+<div class="fff">
+    <h2 class="bbb">Заголовок 1 с классом bbb.</h2>
+    <p>- Текст без класса.</P >
+    <H1 CLASS = "BBB" > Заголовок 1 С Классом BBB. </ H1 >
+    Параграф без класса.
+</ div >
+   </body >
+   </html >
